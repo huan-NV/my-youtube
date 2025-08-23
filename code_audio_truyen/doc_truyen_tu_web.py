@@ -8,16 +8,16 @@ import time
 
 
 # tên truyện sẽ được cài đặt làm tên file
-TRUYEN_NAME = "nong-gia-tieu-han-phi-mang-theo-de-muoi-kiem-song"
+TRUYEN_NAME = "cai-gia-cua-ngai-hau"
 # link truyện bắt đầu từ chương 1
 # trong url thay số chương bằng %chuong
-URL = "https://truyenhoan.com/nong-gia-tieu-han-phi-mang-theo-de-muoi-kiem-song/chuong-%chuong.html"
+URL = f"https://truyenfull.vision/{TRUYEN_NAME}/chuong-%chuong"
 # số chương tối đa(chương cuối)
-END_CHAP = 436
+END_CHAP = 32
 # id thẻ chứa nội dung truyện
 ID_THE_NOI_DUNG = "chapter-c"
 # thư mục chứa nội dung truyện
-SAVE_TRUYEN_PATH = "Z:/audio truyen/"
+SAVE_TRUYEN_PATH = "E:/project/my-youtube/audio_truyen/"
 
 folder_path = f"{SAVE_TRUYEN_PATH}{TRUYEN_NAME}"
 if not os.path.exists(folder_path):
