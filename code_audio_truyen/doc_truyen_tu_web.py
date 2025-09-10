@@ -8,12 +8,12 @@ import time
 
 
 # tên truyện sẽ được cài đặt làm tên file
-TRUYEN_NAME = "cai-gia-cua-ngai-hau"
+TRUYEN_NAME = "da-tinh-ha-ngoc"
 # link truyện bắt đầu từ chương 1
 # trong url thay số chương bằng %chuong
 URL = f"https://truyenfull.vision/{TRUYEN_NAME}/chuong-%chuong"
 # số chương tối đa(chương cuối)
-END_CHAP = 32
+END_CHAP = 10
 # id thẻ chứa nội dung truyện
 ID_THE_NOI_DUNG = "chapter-c"
 # thư mục chứa nội dung truyện

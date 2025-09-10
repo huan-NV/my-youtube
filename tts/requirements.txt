@@ -1,0 +1,11 @@
+TTS==0.22.0
+torch>=1.9.0
+torchaudio
+numpy
+flask
+flask-cors
+soundfile
+librosa
+pydub
+requests
+matplotlib
