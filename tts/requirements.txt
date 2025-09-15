@@ -1,7 +1,8 @@
-TTS==0.22.0
-torch>=1.9.0
-torchaudio
-numpy
+TTS==0.21.2
+torch==2.1.2
+torchaudio==2.1.2
+transformers==4.35.2
+numpy==1.24.3
 flask
 flask-cors
 soundfile
