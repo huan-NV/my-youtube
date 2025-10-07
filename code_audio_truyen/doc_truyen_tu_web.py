@@ -1,19 +1,18 @@
 import os
+import time
+
 from selenium import webdriver
-from selenium.webdriver.support.ui import Select, WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-import time
- 
-
+from selenium.webdriver.support.ui import Select, WebDriverWait
 
 # tên truyện sẽ được cài đặt làm tên file
-TRUYEN_NAME = "guong-vo-chang-lanh"
+TRUYEN_NAME = "the-than-gia-ba-tram-trieu"
 # link truyện bắt đầu từ chương 1
 # trong url thay số chương bằng %chuong
 URL = f"https://truyenfull.vision/{TRUYEN_NAME}/chuong-%chuong"
 # số chương tối đa(chương cuối)
-END_CHAP = 15
+END_CHAP = 6
 # id thẻ chứa nội dung truyện
 ID_THE_NOI_DUNG = "chapter-c"
 # thư mục chứa nội dung truyện
@@ -40,6 +39,6 @@ while chuong <= END_CHAP:
         f.write(noi_dung_chap)
     time.sleep(1)
     chuong += 1
- 
+
 # --- Đóng trình duyệt ---
 driver.quit()
