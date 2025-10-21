@@ -1,1 +1,21 @@
 giọng đọc capcut nữ ngọt ngào
+
+Voice: Female Narrator (vi-VN).
+Tone: Dynamic, engaging, and spiritually grand (Năng động, cuốn hút, khí chất).
+Pacing: Energetic, flowing pace (Khoảng 110% - 120% tốc độ mặc định). The reading must maintain narrative momentum and avoid lengthy, dramatic pauses. Use brief, sharp pauses only at commas and periods.
+Delivery Style: Action-oriented epic storytelling. The reader should project a confident, commanding, and ethereal aura. Emphasize all Hán Việt terms (e.g., 'Trúc Cơ', 'Kim Đan', 'Pháp Bảo') with a clear, sharp articulation and a slight volume lift, then immediately flow into the next word to maintain speed. Use pitch and volume contrast to convey action, power struggles, and sudden danger. The overall voice should be articulate, wise, and high-energy.
+
+
+Voice: vi-VN-Neural2-A. Use this specific voice persona for all narration. 
+Tone: Dynamic, engaging, and spiritually grand (Năng động, cuốn hút, khí chất).
+Pacing: Energetic, flowing pace (Khoảng 110% - 120% tốc độ mặc định). The reading must maintain narrative momentum and avoid lengthy, dramatic pauses. Use brief, sharp pauses only at commas and periods.
+Delivery Style: Action-oriented epic storytelling. The voice delivery **must be highly stable and deterministic across all generations** to maintain character consistency. The reader should project a confident, commanding, and ethereal aura. Emphasize all Hán Việt terms (e.g., 'Trúc Cơ', 'Kim Đan', 'Pháp Bảo') with a clear, sharp articulation and a slight volume lift, then immediately flow into the next word to maintain speed. Use pitch and volume contrast to convey action, power struggles, and sudden danger. The overall voice should be articulate, wise, and high-energy.
+
+
+Voice: vi-VN-Neural2-A.
+Tone: Energetic, articulate, and precise — focus on clarity and a steady emotional drive rather than random dynamism.
+Pacing: 1.10x speed, rhythmic and fluent. Pauses only at commas and periods; never insert expressive gaps or slowdowns.
+Delivery Style: Controlled epic narration — a confident storyteller with balanced vocal intensity. 
+The voice should project subtle strength and emotional depth through pacing and emphasis, not random tone fluctuation.
+Emphasize all Hán Việt terms (e.g., "Trúc Cơ", "Kim Đan", "Pháp Bảo") with a clean, crisp articulation and a slight controlled increase in volume (not pitch).
+Ensure identical prosody and energy across all generations — the voice must remain stable, deterministic, and reproducible.
