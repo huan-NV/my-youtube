@@ -7,16 +7,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
 # tên truyện sẽ được cài đặt làm tên file
-TRUYEN_NAME = "the-than-gia-ba-tram-trieu"
+TRUYEN_NAME = "nguyen-ton"
 # link truyện bắt đầu từ chương 1
 # trong url thay số chương bằng %chuong
 URL = f"https://truyenfull.vision/{TRUYEN_NAME}/chuong-%chuong"
+START_CHAP = 7
 # số chương tối đa(chương cuối)
-END_CHAP = 6
+END_CHAP = 10
 # id thẻ chứa nội dung truyện
 ID_THE_NOI_DUNG = "chapter-c"
 # thư mục chứa nội dung truyện
-SAVE_TRUYEN_PATH = "E:/project/my-youtube/audio_truyen/"
+SAVE_TRUYEN_PATH = "E:/project/my-youtube/audio_truyen/tien_hiep/"
 
 folder_path = f"{SAVE_TRUYEN_PATH}{TRUYEN_NAME}"
 if not os.path.exists(folder_path):
@@ -26,7 +27,7 @@ if not os.path.exists(folder_path):
 # --- Cấu hình trình duyệt ---
 driver = webdriver.Chrome()  # Bạn cần cài sẵn chromedriver hoặc để nó trong PATH
 
-chuong = 1
+chuong = START_CHAP
 while chuong <= END_CHAP:
     # --- Truy cập website ---
     driver.get(URL.replace("%chuong", f"{chuong}"))
@@ -35,7 +36,9 @@ while chuong <= END_CHAP:
     noi_dung_chap = the_noi_dung_chap.text
     time.sleep(1)
     # ghi vào thư mục
-    with open(folder_path + f"/{chuong}.txt", "w", encoding="utf-8") as f:
+    with open(
+        folder_path + f"{START_CHAP}-{END_CHAP}/{chuong}.txt", "w", encoding="utf-8"
+    ) as f:
         f.write(noi_dung_chap)
     time.sleep(1)
     chuong += 1
