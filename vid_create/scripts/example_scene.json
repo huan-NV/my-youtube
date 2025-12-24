@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "scenes": [
+    {
+      "background": "backgrounds/A.jpeg",
+      "actors": [
+        {
+          "id": "character_a",
+          "image": "characters/A.jpeg",
+          "scale": 1.0,
+          "remove_white_bg": true,
+          "white_bg_threshold": 240
+        },
+        {
+          "id": "character_b",
+          "image": "characters/B.jpeg",
+          "scale": 1.0,
+          "remove_white_bg": true,
+          "white_bg_threshold": 240
+        }
+      ],
+      "timeline": [
+        {
+          "type": "spawn",
+          "actor_id": "character_b",
+          "start_time": 0.0,
+          "duration": 0.0,
+          "position": [960, 540]
+        },
+        {
+          "type": "spawn",
+          "actor_id": "character_a",
+          "start_time": 0.0,
+          "duration": 0.0,
+          "position": [-200, 540]
+        },
+        {
+          "type": "move",
+          "actor_id": "character_a",
+          "start_time": 1.0,
+          "duration": 2.0,
+          "from": [-200, 540],
+          "to": [700, 540],
+          "easing": "linear"
+        },
+        {
+          "type": "idle",
+          "actor_id": "character_a",
+          "start_time": 3.0,
+          "duration": 5.0
+        },
+        {
+          "type": "idle",
+          "actor_id": "character_b",
+          "start_time": 3.0,
+          "duration": 5.0
+        },
+        {
+          "type": "dialog",
+          "actor_id": "character_a",
+          "start_time": 3.0,
+          "duration": 2.5
+        },
+        {
+          "type": "dialog",
+          "actor_id": "character_b",
+          "start_time": 5.5,
+          "duration": 2.5
+        },
+        {
+          "type": "exit",
+          "actor_id": "character_a",
+          "start_time": 8.0,
+          "duration": 1.0,
+          "position": [-200, 540]
+        },
+        {
+          "type": "exit",
+          "actor_id": "character_b",
+          "start_time": 8.5,
+          "duration": 1.0,
+          "position": [2120, 540]
+        }
+      ],
+      "audio": {
+        "dialog": [
+          {
+            "file": "audio/story-audio-zephyr (1).wav",
+            "start_time": 3.0,
+            "volume": 1.0
+          },
+          {
+            "file": "audio/story-audio-zephyr.wav",
+            "start_time": 5.5,
+            "volume": 1.0
+          }
+        ],
+        "music": [
+          {
+            "file": "audio/A.m4a",
+            "start_time": 0.0,
+            "volume": 0.3,
+            "loop": true
+          }
+        ],
+        "sfx": []
+      }
+    }
+  ]
+}
